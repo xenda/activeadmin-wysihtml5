@@ -127,3 +127,28 @@
 .wysiwyg-clear-left {
   clear: left;
 }
+
+
+.wysiwyg-color-green {
+  color: #899E24;  
+}
+
+.wysiwyg-color-brown{
+  color: #925712;
+}
+
+.wysiwyg-color-red {
+  color: #F73030;
+}
+
+.wysiwyg-color-purple {
+  color: #863EC9;
+}
+
+.wysiwyg-color-blue {
+  color: #287EAF;
+}
+
+.wysiwyg-color-orange {
+  color: #FF9D32;
+}
