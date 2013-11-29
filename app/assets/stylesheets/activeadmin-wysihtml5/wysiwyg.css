@@ -128,7 +128,6 @@
   clear: left;
 }
 
-
 .wysiwyg-color-green {
   color: #899E24;  
 }
@@ -151,4 +150,12 @@
 
 .wysiwyg-color-orange {
   color: #FF9D32;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid #99a2aa;
 }
