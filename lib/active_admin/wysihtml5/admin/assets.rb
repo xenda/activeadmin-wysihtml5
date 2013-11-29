@@ -36,6 +36,18 @@ ActiveAdmin.register Asset do
 
   controller do
 
+    def index
+      @assets = Asset.all
+      Rails.logger.info "Test"
+      respond_to do |format|
+        format.json {
+          render json: @assets.to_json
+        }
+        format.html
+      end
+
+    end
+
     def create
       # If an app is using Rack::RawUpload, it can just use
       # params['file'] and not worry with original_filename parsing.
