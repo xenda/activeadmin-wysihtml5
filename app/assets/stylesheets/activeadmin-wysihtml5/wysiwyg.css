@@ -159,3 +159,8 @@ table {
 table, td, th {
   border: 1px solid #99a2aa;
 }
+
+
+iframe {
+  background: #ccc image-url('activeadmin-wysihtml5/iframe_placeholder.gif') no-repeat;
+}
