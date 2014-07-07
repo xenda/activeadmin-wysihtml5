@@ -116,9 +116,8 @@
                 selectedAsset = asset
                 false
               $gallery.append($("<li/>").append($a))
-            if (window.selectedImage)
-              console.log(data);
-              console.log(data.indexOf(window.selectedImage))
+              if (window.selectedImage and asset.thumb_url is window.selectedImage.thumb_url)
+                $a.click()
 
         initUploader = ->
           uploader = new qq.FileUploader
