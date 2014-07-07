@@ -144,6 +144,8 @@
           if el
             editor.currentView.element.focus()
             editor.composer.commands.exec("insertImage", el)
+            window.insertedImages ||= {}
+            window.insertedImages[source_url[scale]] = selectedAsset
 
         activeButton = $(this).hasClass("wysihtml5-command-active")
         if !activeButton
