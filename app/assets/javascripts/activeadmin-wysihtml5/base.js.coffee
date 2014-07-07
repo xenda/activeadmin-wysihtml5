@@ -116,9 +116,8 @@
                 selectedAsset = asset
                 false
               $gallery.append($("<li/>").append($a))
-            if (window.selectedImage) {
+            if (window.selectedImage)
               console.log(data.indexOf(window.selectedImage))
-            }
 
         initUploader = ->
           uploader = new qq.FileUploader
