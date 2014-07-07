@@ -117,6 +117,7 @@
                 false
               $gallery.append($("<li/>").append($a))
             if (window.selectedImage)
+              console.log(data);
               console.log(data.indexOf(window.selectedImage))
 
         initUploader = ->
