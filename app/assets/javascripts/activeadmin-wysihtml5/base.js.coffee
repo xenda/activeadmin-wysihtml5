@@ -151,19 +151,19 @@
             window.insertedImages[selectedAsset.source_url[scale]] = selectedAsset
 
         activeButton = $(this).hasClass("wysihtml5-command-active")
-        
-        $modal.modal()
-        $tab_handles.eq(0).click()
-        refreshAssets()
-        initUploader()
 
         if !activeButton
-          # $tab_handles.eq(0).click()
-          # refreshAssets()
-          # initUploader()
+          $modal.modal()
+          $tab_handles.eq(0).click()
+          refreshAssets()
+          initUploader()
           false
         else
-          selectedAsset = window.selectedImage
+          selectedAsset = selectedImage
+          $modal.modal()
+          $tab_handles.eq(0).click()
+          refreshAssets()
+          initUploader()
           !true
 
       $toolbar.find('a[data-wysihtml5-command=insertVideo]').click ->
