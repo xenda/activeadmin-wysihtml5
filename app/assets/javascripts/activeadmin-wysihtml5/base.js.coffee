@@ -158,7 +158,7 @@
           initUploader()
           false
         else
-          true
+          !true
 
       $toolbar.find('a[data-wysihtml5-command=insertVideo]').click ->
         $modal = $editor.find(".modal-video").clone()
