@@ -147,6 +147,7 @@
           if el
             editor.currentView.element.focus()
             editor.composer.commands.exec("insertImage", el)
+            console.log(el)
             window.insertedImages ||= {}
             window.insertedImages[selectedAsset.source_url[scale]] = selectedAsset
 
