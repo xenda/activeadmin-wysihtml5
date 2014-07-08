@@ -87,6 +87,7 @@
 
       $toolbar.find('a[data-wysihtml5-command=insertImage]').click ->
         $modal = $editor.find(".modal-image").clone()
+        window.$modal = $modal;
         $uploader = $modal.find('.asset-uploader')
         $gallery = $modal.find('.assets-container ul')
         $url = $modal.find('[name=url]')
@@ -150,7 +151,7 @@
             window.insertedImages[selectedAsset.source_url[scale]] = selectedAsset
 
         activeButton = $(this).hasClass("wysihtml5-command-active")
-        console.log(activeButton)
+        
         if !activeButton
           $modal.modal()
           $tab_handles.eq(0).click()
