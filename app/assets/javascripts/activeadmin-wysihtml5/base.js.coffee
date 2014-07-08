@@ -152,13 +152,13 @@
 
         activeButton = $(this).hasClass("wysihtml5-command-active")
         
-
         $modal.modal()
         $tab_handles.eq(0).click()
         refreshAssets()
         initUploader()
 
         if !activeButton
+          selectedAsset = window.selectedImage
           # $tab_handles.eq(0).click()
           # refreshAssets()
           # initUploader()
