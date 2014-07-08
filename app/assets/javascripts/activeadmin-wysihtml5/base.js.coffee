@@ -158,12 +158,12 @@
         initUploader()
 
         if !activeButton
-          selectedAsset = window.selectedImage
           # $tab_handles.eq(0).click()
           # refreshAssets()
           # initUploader()
           false
         else
+          selectedAsset = window.selectedImage
           !true
 
       $toolbar.find('a[data-wysihtml5-command=insertVideo]').click ->
