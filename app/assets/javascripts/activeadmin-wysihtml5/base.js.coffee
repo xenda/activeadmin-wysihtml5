@@ -152,14 +152,16 @@
 
         activeButton = $(this).hasClass("wysihtml5-command-active")
         
+
+        $modal.modal()
+
         if !activeButton
-          $modal.modal()
           $tab_handles.eq(0).click()
           refreshAssets()
           initUploader()
           false
         else
-          true
+          !true
 
       $toolbar.find('a[data-wysihtml5-command=insertVideo]').click ->
         $modal = $editor.find(".modal-video").clone()
