@@ -154,11 +154,14 @@
         
 
         $modal.modal()
+        $tab_handles.eq(0).click()
+        refreshAssets()
+        initUploader()
 
         if !activeButton
-          $tab_handles.eq(0).click()
-          refreshAssets()
-          initUploader()
+          # $tab_handles.eq(0).click()
+          # refreshAssets()
+          # initUploader()
           false
         else
           !true
